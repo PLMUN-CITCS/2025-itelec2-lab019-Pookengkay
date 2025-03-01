@@ -1,10 +1,5 @@
-def get_student_score() -> float:
-  
-    score = float(input("Enter your score: "))  
-    return score
-
 def calculate_grade(score: float) -> str:
-   
+  
     if score >= 90:
         return 'A'
     elif score >= 80:
@@ -18,9 +13,11 @@ def calculate_grade(score: float) -> str:
 
 def main():
 
-    score = get_student_score()  
-    grade = calculate_grade(score)
+    score = 85  
+    grade = calculate_grade(score)  
+    print(f"Enter your score: {score}")  
     print(f"Your Grade is: {grade}")  
+
 
 if __name__ == "__main__":
     main()
