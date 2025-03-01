@@ -1,14 +1,10 @@
-def get_score() -> float:
- 
-    while True:
-        try:
-            score = float(input("Enter your score: "))
-            return score
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")
+def get_student_score() -> float:
+   
+    score = float(input("Enter your score: "))
+    return score
 
 def calculate_grade(score: float) -> str:
-  
+    
     if score >= 90:
         return 'A'
     elif score >= 80:
@@ -21,10 +17,11 @@ def calculate_grade(score: float) -> str:
         return 'F'
 
 def main():
-  
-    score = get_score()
-    grade = calculate_grade(score)
-    print(f"Your Grade is: {grade}")
+   
+    score = get_student_score()  
+    grade = calculate_grade(score)  
+    print(f"Your Grade is: {grade}")  
+
 
 if __name__ == "__main__":
     main()
